@@ -1,108 +1,141 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Andrew Camilleri</title>
-    <link rel="icon" href="/pics/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fullpage.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        section {
+            padding: 2rem 1rem;
+        }
+
+        .property-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .property-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .property-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property-item h3 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="fullpage">
-        <div class="section">
-            <div class="grid-container">
-                <div class="grid-item1">
-                    <h2><span class="type2"></span></h2>
-                </div>
-                <div class="grid-item2">
-                    <h3><span class="type"></span></h3>
-                </div>
-                <div class="grid-item3">
-                    <div class="fade-in-text">
-                        <a href="#secondPage" id="about">/about me<br></a> 
-                    </div>
-                    <div class="fade-in-text">
-                        <a href="#thirdPage" id="projects">/skills<br></a>
-                    </div>
-                    <div class="fade-in-text">
-                        <a href="#fourthPage" id="experience">/experience<br></a> 
-                    </div>
-                    <div class="fade-in-text">
-                        <a href="#fifthPage" id="projects">/projects<br></a>
-                    </div>
-                    <br>
-                    <a href="https://www.linkedin.com/in/aacamilleri/" target="_blank" rel="noopener noreferrer"><img class="socials" src="/pics/linkedin.png"></a>
-                    <a href="https://github.com/aacamilleri" target="_blank" rel="noopener noreferrer"><img class="socials" src="/pics/github.png"></a>
-                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer"><img id="gmail" class="socials" src="/pics/pdf.png"></a>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="about">
-            <p id="heading" style="color:#344e41">/about me</p>
-            <img src="/pics/me.jpg" id="optional" class="center-image">
-            <p id="bio"> I'm a software engineer based in Waterloo. I have a profound interest for AI, full-stack development, SQL, and everything in between. In my free time, I enjoy to cook, code, and play video games. </p>
-            <p id="bio"> I am currently pursuing a degree in <b>Computer Science</b> at <b>Wilfrid Laurier University.</b> I am currently working in the FINTECH industry at <b style="color: #ee6c4d">MCAP</b> as an <b>Application Engineer.</b></p>
-        </div>
-        <div class="section" id="skills" style="background-color: #dad7cd;">
-            <p id="heading" style="color:#344e41">/skills</p>
-            <p id="bio">main languages</p>
-            <div class="p-langs">
-                <img class="p-lang" src="/pics/python.svg"></a>
-                <img class="p-lang" src="/pics/java.svg"></a>
-                <img class="p-lang" src="/pics/csharp.png"></a>
-            </div>
-            <p id="bio">technologies</p>
-            <div class="p-langs">
-                <img class="p-lang" src="/pics/js.png"></a>
-                <img class="p-lang" src="/pics/mysql.png"></a>
-                <img class="p-lang" src="/pics/html.png"></a>
-            </div>
-            <p id="bio">workflow</p>
-            <div class="p-langs">
-                <img class="p-lang" src="/pics/as400.png"></a>
-                <img class="p-lang" src="/pics/ado.png"></a>
-                <img class="p-lang" src="/pics/vsc.png"></a>
-            </div>
-        </div>
-        <div class="section" id="experience" style="background-color: #a3b18a;">
-            <p id="heading" style="color:#344e41">/experience</p>
-            <p id="bio"> 
-            </div>
-        <div class="section" id="projects" style="background-color: #dad7cd;">
-            <p id="heading" style="color:#344e41">/projects</p>
-            <p id="watermark">Built and designed by Andrew Camilleri. <br> All rights reserved. ©</p>
-        </div>
+    <header>
+        <h1>Property Management</h1>
+        <p>Your trusted partner in real estate management</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Properties</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Find Your Perfect Home</h1>
     </div>
-    
-    <script src="./fullpage.min.js"></script>
-    <script src="./app.js"></script>
 
-    <script src="typed.js"></script>
-    <script>
-        var typed = new Typed(".type", {
-            strings: ["^800i'm andrew camilleri"],
-            typeSpeed: 60,
-            cursorChar: '_',
-            fadeout:true,
-        });
-    </script>
+    <section>
+        <h2>Available Properties</h2>
+        <div class="property-list">
+            <div class="property-item">
+                <img src="property1.jpg" alt="Property 1">
+                <h3>2 Bedroom Apartment</h3>
+                <p>Located in downtown. $1500/month</p>
+                <button>Learn More</button>
+            </div>
 
-    <script src="typed.js"></script>
-    <script>
-        var typed = new Typed(".type2", {
-            strings: ["^400hi,"],
-            typeSpeed: 60,
-            cursorChar: '',
-            showCursor: false,
-        });
-    </script>
-</body> 
+            <div class="property-item">
+                <img src="property2.jpg" alt="Property 2">
+                <h3>3 Bedroom House</h3>
+                <p>Spacious and family-friendly. $2200/month</p>
+                <button>Learn More</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Property Management, Inc.</p>
+    </footer>
+</body>
 
 </html>
